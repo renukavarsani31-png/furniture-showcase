@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <div className="rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid var(--border)" }}>
               <div className="relative h-72">
-                <Image src="/team/owner-1.jpg" alt="Pravin Varsani" fill className="object-cover" />
+                <Image src="/team/owner-1.jpg" alt="Pravin Varsani" fill className="object-cover object-top" />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Pravin Varsani</h3>
@@ -32,7 +32,7 @@ export default function AboutPage() {
             </div>
             <div className="rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid var(--border)" }}>
               <div className="relative h-72">
-                <Image src="/team/owner-2.jpg" alt="Dev Varsani" fill className="object-cover" />
+                <Image src="/team/owner-2.jpg" alt="Dev Varsani" fill className="object-cover object-top" />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Dev Varsani</h3>
