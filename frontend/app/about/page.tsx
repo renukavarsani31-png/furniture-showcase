@@ -14,31 +14,36 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-4">
+      <section className="py-24 px-4" style={{ background: "#fff" }}>
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold" style={{ color: "var(--foreground)" }}>Meet the team</h2>
+          <div className="text-center mb-16">
+            <p className="text-sm tracking-widest uppercase mb-2" style={{ color: "var(--accent)" }}>The people behind the work</p>
+            <h2 className="text-4xl font-bold" style={{ color: "var(--foreground)" }}>Meet the team</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-            <div className="rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid var(--border)" }}>
-              <div className="relative h-72">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-3xl mx-auto">
+            {/* Card 1 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="relative w-52 h-52 rounded-full overflow-hidden mb-6" style={{ border: "4px solid var(--accent-light)", boxShadow: "0 8px 32px rgba(184,114,42,0.15)" }}>
                 <Image src="/team/owner-1.jpg" alt="Pravin Varsani" fill className="object-cover object-top" />
               </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Pravin Varsani</h3>
-                <p className="text-sm font-medium mb-2" style={{ color: "var(--accent)" }}>Founder & Master Craftsman</p>
-                <p className="text-sm" style={{ color: "var(--muted)" }}>+91 98795 69177</p>
-              </div>
+              <h3 className="text-2xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Pravin Varsani</h3>
+              <p className="text-sm font-semibold mb-3 tracking-wide uppercase" style={{ color: "var(--accent)" }}>Founder & Master Craftsman</p>
+              <div className="w-10 mb-4" style={{ height: "2px", background: "var(--accent)" }}></div>
+              <a href="tel:+919879569177" className="text-sm px-5 py-2 rounded-full font-medium" style={{ background: "var(--accent-light)", color: "var(--accent)" }}>
+                +91 98795 69177
+              </a>
             </div>
-            <div className="rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid var(--border)" }}>
-              <div className="relative h-72">
+            {/* Card 2 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="relative w-52 h-52 rounded-full overflow-hidden mb-6" style={{ border: "4px solid var(--accent-light)", boxShadow: "0 8px 32px rgba(184,114,42,0.15)" }}>
                 <Image src="/team/owner-2.jpg" alt="Dev Varsani" fill className="object-cover object-top" />
               </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Dev Varsani</h3>
-                <p className="text-sm font-medium mb-2" style={{ color: "var(--accent)" }}>Co-Founder & Design Specialist</p>
-                <p className="text-sm" style={{ color: "var(--muted)" }}>+91 87583 08315</p>
-              </div>
+              <h3 className="text-2xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Dev Varsani</h3>
+              <p className="text-sm font-semibold mb-3 tracking-wide uppercase" style={{ color: "var(--accent)" }}>Co-Founder & Design Specialist</p>
+              <div className="w-10 mb-4" style={{ height: "2px", background: "var(--accent)" }}></div>
+              <a href="tel:+918758308315" className="text-sm px-5 py-2 rounded-full font-medium" style={{ background: "var(--accent-light)", color: "var(--accent)" }}>
+                +91 87583 08315
+              </a>
             </div>
           </div>
         </div>
