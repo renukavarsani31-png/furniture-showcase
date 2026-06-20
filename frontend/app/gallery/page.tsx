@@ -16,7 +16,7 @@ const PHOTOS = [
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961616/hira-sales/kgo8m7eif8fkvsgdf7yr.jpg", category: "mandir" },
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961623/hira-sales/mhot6lbup6fx1q2zxryl.jpg", category: "mandir" },
   // Bedrooms
-  { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961627/hira-sales/ap4baxnxn2ahv4gulnoo.jpg", category: "bedrooms" },
+  { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961627/hira-sales/ap4baxnxn2ahv4gulnoo.jpg", category: "mandir" },
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961630/hira-sales/whzfscymatjgik4i5zln.jpg", category: "bedrooms" },
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961633/hira-sales/ckmydkqxl5ksjm1l0dw2.jpg", category: "bedrooms" },
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961636/hira-sales/rudp3w8ebra38sdcbml8.jpg", category: "bedrooms" },
@@ -55,11 +55,9 @@ const PHOTOS = [
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961756/hira-sales/tlagckhvozgikbpbbmay.jpg", category: "kitchens" },
   // TV Units
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961759/hira-sales/razip0awsdn4ib5njcbh.jpg", category: "tv-units" },
-  // Halls
+  // Halls - sofa (l6q9) + reception desk (vhlpp) + reception (qedk) — skip ceiling (sa7x)
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961764/hira-sales/l6q9blutz0gpy6jnr8mx.jpg", category: "halls" },
-  { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961766/hira-sales/vhlppklq7mjiuvsmaunh.jpg", category: "halls" },
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961769/hira-sales/qedknnjpvyy9qslr3wie.jpg", category: "halls" },
-  { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961772/hira-sales/sa7xsz9tczf9ma38yt4o.jpg", category: "halls" },
   // Showroom
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961775/hira-sales/hyzctlqt4owsidkda6wh.jpg", category: "showroom" },
   { url: "https://res.cloudinary.com/dyluzqixm/image/upload/v1781961777/hira-sales/v4se2nue0cjcsecv9ked.jpg", category: "showroom" },
