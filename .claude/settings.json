@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -m 'Update contact email to devvarsani81@gmail.com *)",
+      "Bash(git commit -m 'Add Junavas, Madhapar, Bhuj location to contact, footer and about *)",
+      "Bash(git commit -m 'Fix team photo crop to show faces from top *)",
+      "Bash(git commit -m 'Redesign team section with circular photos and better styling *)",
+      "WebFetch(domain:maps.app.goo.gl)",
+      "Bash(git commit -m 'Add Google Maps embed with Hira Sales location on contact page *)",
+      "WebFetch(domain:www.kkphospital.org)"
+    ]
+  }
+}

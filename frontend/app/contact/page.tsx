@@ -135,7 +135,6 @@ export default function ContactPage() {
           )}
         </div>
       </div>
-    </div>
 
       {/* Map */}
       <div className="mt-16">
