@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const db = require('../config/database');
 const upload = require('../middleware/upload');
-const { uploadToR2, deleteFromR2 } = require('../config/r2');
+const { uploadToCloudinary, deleteFromCloudinary } = require('../config/cloudinary');
 const { authMiddleware, isAdmin } = require('../middleware/auth');
 
 // UPLOAD images to project (admin only)
@@ -16,10 +16,10 @@ router.post('/upload/:projectId', authMiddleware, isAdmin, upload.array('images'
       return res.status(404).json({ error: 'Project not found' });
     }
 
-    // Upload files to R2
+    // Upload files to Cloudinary
     const uploadPromises = req.files.map(async (file) => {
-      const { filename, url } = await uploadToR2(file, 'projects');
-      
+      const { filename, url } = await uploadToCloudinary(file, 'projects');
+
       return {
         project_id: projectId,
         filename,
@@ -104,8 +104,8 @@ router.delete('/:id', authMiddleware, isAdmin, async (req, res) => {
       return res.status(404).json({ error: 'Image not found' });
     }
 
-    // Delete from R2
-    await deleteFromR2(image.r2_key);
+    // Delete from Cloudinary
+    await deleteFromCloudinary(image.r2_key);
 
     // Delete from database
     await db('images').where({ id: req.params.id }).delete();
