@@ -125,7 +125,7 @@ export default function Home() {
               },
               {
                 name: "KC Hospital",
-                url: "https://maps.app.goo.gl/oV88fPLSX4uKpjB59",
+                url: "https://www.practo.com/bhuj/clinic/k-c-hospital-3-bharat-nagar",
                 logo: null,
                 desc: "Multi-specialty hospital, Bhuj"
               },
