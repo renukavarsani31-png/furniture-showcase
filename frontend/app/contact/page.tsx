@@ -136,5 +136,26 @@ export default function ContactPage() {
         </div>
       </div>
     </div>
+
+      {/* Map */}
+      <div className="mt-16">
+        <div className="max-w-5xl mx-auto px-4 mb-4">
+          <h2 className="text-xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Find us</h2>
+          <p className="text-sm" style={{ color: "var(--muted)" }}>Junavas, Madhapar, Bhuj, Gujarat 370020</p>
+        </div>
+        <div className="w-full" style={{ height: "380px" }}>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.!2d69.69807639999999!3d23.2414669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950e193c368c139%3A0xba01279c7d03bfb4!2sHira%20sales!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin"
+            width="100%"
+            height="380"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Hira Sales Location"
+          ></iframe>
+        </div>
+      </div>
+    </div>
   );
 }
