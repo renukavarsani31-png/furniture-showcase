@@ -89,6 +89,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Clients */}
+      <section className="py-20 px-4" style={{ background: "#fff" }}>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm tracking-widest uppercase mb-2" style={{ color: "var(--accent)" }}>Trusted by</p>
+            <h2 className="text-3xl font-bold" style={{ color: "var(--foreground)" }}>Our clients</h2>
+            <p className="mt-2 text-sm" style={{ color: "var(--muted)" }}>Leading hospitals, corporates and businesses across Kutch trust Hira Sales</p>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              {
+                name: "K.K. Patel Super Speciality Hospital",
+                url: "https://www.kkphospital.org/",
+                logo: "https://www.kkphospital.org/public/images/logo.jpg",
+                desc: "Multi-specialty hospital, Bhuj"
+              },
+              {
+                name: "MMPJ Hospital & Research Centre",
+                url: "https://www.mmpjhospital.org/",
+                logo: "https://www.mmpjhospital.org/public/front-assets/img/logo.webp",
+                desc: "Healthcare facility, Bhuj"
+              },
+              {
+                name: "SVCT Group",
+                url: "https://svctgroup.com/",
+                logo: "https://svctgroup.com/wp-content/uploads/2023/09/Group-100.webp",
+                desc: "Diversified business group, Est. 1965"
+              },
+              {
+                name: "GR Global",
+                url: "https://grglobal.co.in/",
+                logo: null,
+                desc: "Global logistics & freight, 15 countries"
+              },
+            ].map(client => (
+              <a
+                key={client.name}
+                href={client.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center text-center p-6 rounded-xl hover:shadow-md transition-all group"
+                style={{ border: "1px solid var(--border)", background: "var(--background)" }}
+              >
+                <div className="h-14 flex items-center justify-center mb-4">
+                  {client.logo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={client.logo} alt={client.name} className="max-h-14 max-w-full object-contain" />
+                  ) : (
+                    <div className="w-14 h-14 rounded-full flex items-center justify-center text-xl font-bold text-white" style={{ background: "var(--accent)" }}>
+                      {client.name.charAt(0)}
+                    </div>
+                  )}
+                </div>
+                <div className="text-sm font-semibold mb-1 group-hover:underline" style={{ color: "var(--foreground)" }}>{client.name}</div>
+                <div className="text-xs" style={{ color: "var(--muted)" }}>{client.desc}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-4 text-center" style={{ background: "var(--foreground)" }}>
         <div className="max-w-2xl mx-auto">
