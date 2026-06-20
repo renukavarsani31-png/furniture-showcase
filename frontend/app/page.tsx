@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const categories = [
-  { name: "Doors", slug: "doors", icon: "🚪", desc: "Custom wooden & designer doors" },
+  { name: "Mandir", slug: "mandir", icon: "🛕", desc: "Hand-carved wooden temple units" },
   { name: "Bedrooms", slug: "bedrooms", icon: "🛏️", desc: "Complete bedroom furniture sets" },
   { name: "Kitchens", slug: "kitchens", icon: "🍳", desc: "Modern modular kitchen designs" },
+  { name: "Wardrobes", slug: "wardrobes", icon: "🚪", desc: "Custom wardrobe & storage solutions" },
   { name: "Halls & Living Rooms", slug: "halls", icon: "🛋️", desc: "Sofas, TV units & living sets" },
   { name: "TV Units", slug: "tv-units", icon: "📺", desc: "Designer entertainment centers" },
-  { name: "Wardrobes", slug: "wardrobes", icon: "👗", desc: "Custom storage solutions" },
   { name: "Showroom", slug: "showroom", icon: "🏪", desc: "Visit our showroom & workshop" },
   { name: "Custom Furniture", slug: "custom-furniture", icon: "✏️", desc: "Bespoke furniture for you" },
 ];
