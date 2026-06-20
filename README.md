@@ -248,3 +248,4 @@ Perfect for furniture business starting out! When you grow, upgrade is just $20/
 ## License
 
 Private - All Rights Reserved
+# furniture-showcase
