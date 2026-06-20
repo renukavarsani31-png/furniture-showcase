@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "furniture-showcase-frontend",
+      "root": "frontend"
+    },
+    {
+      "name": "furniture-showcase-backend",
+      "root": "backend"
+    }
+  ]
+}
