@@ -97,7 +97,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold" style={{ color: "var(--foreground)" }}>Our clients</h2>
             <p className="mt-2 text-sm" style={{ color: "var(--muted)" }}>Leading hospitals, corporates and businesses across Kutch trust Hira Sales</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
             {[
               {
                 name: "K.K. Patel Super Speciality Hospital",
@@ -122,6 +122,24 @@ export default function Home() {
                 url: "https://grglobal.co.in/",
                 logo: null,
                 desc: "Global logistics & freight, 15 countries"
+              },
+              {
+                name: "KC Hospital",
+                url: "https://maps.app.goo.gl/oV88fPLSX4uKpjB59",
+                logo: null,
+                desc: "Multi-specialty hospital, Bhuj"
+              },
+              {
+                name: "Divisha Women's Hospital",
+                url: "https://maps.app.goo.gl/oV88fPLSX4uKpjB59",
+                logo: null,
+                desc: "Women's hospital, Bhuj"
+              },
+              {
+                name: "Jogal Women's Hospital",
+                url: "https://maps.app.goo.gl/oV88fPLSX4uKpjB59",
+                logo: null,
+                desc: "Women's hospital, Bhuj"
               },
             ].map(client => (
               <a
