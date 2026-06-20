@@ -1,12 +1,23 @@
 {
-  "projects": [
+  "version": 2,
+  "builds": [
     {
-      "name": "furniture-showcase-frontend",
-      "root": "frontend"
+      "src": "frontend/package.json",
+      "use": "@vercel/next"
     },
     {
-      "name": "furniture-showcase-backend",
-      "root": "backend"
+      "src": "backend/src/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/src/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/$1"
     }
   ]
 }
