@@ -131,13 +131,13 @@ export default function Home() {
               },
               {
                 name: "Divisha Women's Hospital",
-                url: "https://maps.app.goo.gl/oV88fPLSX4uKpjB59",
+                url: "https://share.google/8fEnbWuiU3wfUQNzP",
                 logo: null,
                 desc: "Women's hospital, Bhuj"
               },
               {
                 name: "Jogal Women's Hospital",
-                url: "https://maps.app.goo.gl/oV88fPLSX4uKpjB59",
+                url: "https://www.jogalwomenshospital.com/",
                 logo: null,
                 desc: "Women's hospital, Bhuj"
               },
