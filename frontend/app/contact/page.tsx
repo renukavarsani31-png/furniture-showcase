@@ -42,7 +42,7 @@ export default function ContactPage() {
             {[
               { icon: "📞", label: "Pravin Varsani", val: "+91 98795 69177" },
               { icon: "📞", label: "Dev Varsani", val: "+91 87583 08315" },
-              { icon: "📧", label: "Email", val: "renukavarsani31@gmail.com" },
+              { icon: "📧", label: "Email", val: "devvarsani81@gmail.com" },
               { icon: "⏱️", label: "Response time", val: "Within 24 hours" },
               { icon: "📍", label: "Service area", val: "Ahmedabad & surrounding areas" },
             ].map(item => (
