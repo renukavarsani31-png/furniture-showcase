@@ -44,7 +44,8 @@ export default function ContactPage() {
               { icon: "📞", label: "Dev Varsani", val: "+91 87583 08315" },
               { icon: "📧", label: "Email", val: "devvarsani81@gmail.com" },
               { icon: "⏱️", label: "Response time", val: "Within 24 hours" },
-              { icon: "📍", label: "Service area", val: "Ahmedabad & surrounding areas" },
+              { icon: "📍", label: "Address", val: "Junavas, Madhapar, Bhuj, Gujarat 370020" },
+              { icon: "🗺️", label: "Service area", val: "Bhuj & surrounding areas" },
             ].map(item => (
               <div key={item.label} className="flex items-start gap-3">
                 <span className="text-2xl">{item.icon}</span>

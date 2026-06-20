@@ -49,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <ul className="space-y-1 text-sm">
                 <li>Pravin Varsani: +91 98795 69177</li>
                 <li>Dev Varsani: +91 87583 08315</li>
+                <li>Junavas, Madhapar, Bhuj, Gujarat 370020</li>
                 <li><Link href="/contact" className="hover:text-white">Send an enquiry →</Link></li>
               </ul>
             </div>

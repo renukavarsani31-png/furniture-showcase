@@ -51,7 +51,7 @@ export default function AboutPage() {
           <div className="text-base leading-relaxed space-y-4" style={{ color: "var(--muted)" }}>
             <p>Hira Sales was founded with a simple vision: to build furniture that people are proud to have in their homes. What started as a small workshop has grown into a trusted name for custom doors, bedrooms, kitchens, and wardrobes.</p>
             <p>Every piece we make is built to your exact measurements and specifications. We use premium materials and combine traditional woodworking with modern design — the result is furniture that lasts for generations.</p>
-            <p>Visit our showroom in Madhapar to see our work firsthand and speak with the team.</p>
+            <p>Visit our showroom at <strong>Junavas, Madhapar, Bhuj, Gujarat 370020</strong> to see our work firsthand and speak with the team.</p>
           </div>
         </div>
       </section>
