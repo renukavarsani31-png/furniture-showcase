@@ -1,168 +1,87 @@
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-amber-600 to-orange-600 text-white py-20">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            About Hira Sales
-          </h1>
-          <p className="text-xl text-center max-w-2xl mx-auto">
-            Your Trusted Partner in Custom Furniture Manufacturing
-          </p>
-        </div>
-      </div>
+    <div>
+      {/* Hero */}
+      <section style={{ background: "linear-gradient(135deg, #1a0f0a 0%, #3d1f0d 100%)" }} className="text-white py-20 px-4 text-center">
+        <p className="text-sm tracking-widest uppercase mb-3" style={{ color: "#c8a87a" }}>Our story</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">About Hira Sales</h1>
+        <p className="text-lg max-w-xl mx-auto" style={{ color: "#c8b89a" }}>
+          Custom furniture crafted with care for homes and offices across the region.
+        </p>
+      </section>
 
-      {/* Owner Section */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Dedicated craftsmen with years of experience in creating beautiful, 
-            high-quality furniture for homes and businesses.
-          </p>
-        </div>
-
-        {/* Owner Photos Grid */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
-          {/* Owner 1 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-96">
-              <Image
-                src="/team/owner-1.jpg"
-                alt="Hira Sales Owner"
-                fill
-                className="object-cover"
-                priority
-              />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                [Owner Name]
-              </h3>
-              <p className="text-amber-600 font-semibold mb-3">
-                Founder & Master Craftsman
-              </p>
-              <p className="text-gray-600">
-                With over [X] years of experience in furniture manufacturing, 
-                bringing traditional craftsmanship to modern designs.
-              </p>
-            </div>
+      {/* Team */}
+      <section className="py-20 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold" style={{ color: "var(--foreground)" }}>Meet the team</h2>
           </div>
-
-          {/* Owner 2 */}
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="relative h-96">
-              <Image
-                src="/team/owner-2.jpg"
-                alt="Hira Sales Team Member"
-                fill
-                className="object-cover"
-                priority
-              />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+            <div className="rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid var(--border)" }}>
+              <div className="relative h-72">
+                <Image src="/team/owner-1.jpg" alt="Pravin Varsani" fill className="object-cover" />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Pravin Varsani</h3>
+                <p className="text-sm font-medium mb-2" style={{ color: "var(--accent)" }}>Founder & Master Craftsman</p>
+                <p className="text-sm" style={{ color: "var(--muted)" }}>+91 98795 69177</p>
+              </div>
             </div>
-            <div className="p-6 text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                [Team Member Name]
-              </h3>
-              <p className="text-amber-600 font-semibold mb-3">
-                Co-Founder & Design Specialist
-              </p>
-              <p className="text-gray-600">
-                Specializing in custom designs and client consultations, 
-                ensuring every piece meets your exact specifications.
-              </p>
+            <div className="rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid var(--border)" }}>
+              <div className="relative h-72">
+                <Image src="/team/owner-2.jpg" alt="Dev Varsani" fill className="object-cover" />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-bold mb-1" style={{ color: "var(--foreground)" }}>Dev Varsani</h3>
+                <p className="text-sm font-medium mb-2" style={{ color: "var(--accent)" }}>Co-Founder & Design Specialist</p>
+                <p className="text-sm" style={{ color: "var(--muted)" }}>+91 87583 08315</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Company Story */}
-        <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-            Our Story
-          </h2>
-          <div className="prose prose-lg mx-auto text-gray-600">
-            <p className="mb-4">
-              Hira Sales was established in Madhapar with a vision to provide 
-              high-quality, custom-made furniture to homes and businesses across 
-              the region. What started as a small workshop has grown into a trusted 
-              name in furniture manufacturing.
-            </p>
-            <p className="mb-4">
-              We specialize in:
-            </p>
-            <ul className="list-disc pl-6 mb-4">
-              <li>Custom Wooden Doors & Windows</li>
-              <li>Complete Bedroom Furniture Sets</li>
-              <li>Modular Kitchen Solutions</li>
-              <li>Living Room & Entertainment Units</li>
-              <li>Dining Furniture</li>
-              <li>Wardrobes & Storage Solutions</li>
-              <li>Commercial Furniture</li>
-            </ul>
-            <p className="mb-4">
-              Every piece we create is crafted with attention to detail, using 
-              premium materials and traditional woodworking techniques combined 
-              with modern design principles.
-            </p>
-            <p>
-              Visit our showroom in Madhapar to see our work firsthand and discuss 
-              your furniture needs with our team.
-            </p>
+      {/* Story */}
+      <section className="py-20 px-4" style={{ background: "var(--accent-light)" }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center" style={{ color: "var(--foreground)" }}>Our story</h2>
+          <div className="text-base leading-relaxed space-y-4" style={{ color: "var(--muted)" }}>
+            <p>Hira Sales was founded with a simple vision: to build furniture that people are proud to have in their homes. What started as a small workshop has grown into a trusted name for custom doors, bedrooms, kitchens, and wardrobes.</p>
+            <p>Every piece we make is built to your exact measurements and specifications. We use premium materials and combine traditional woodworking with modern design — the result is furniture that lasts for generations.</p>
+            <p>Visit our showroom in Madhapar to see our work firsthand and speak with the team.</p>
           </div>
         </div>
+      </section>
 
-        {/* Values Section */}
-        <div className="mt-16 grid md:grid-cols-3 gap-8">
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-            <div className="text-4xl mb-4">🎨</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Quality Craftsmanship</h3>
-            <p className="text-gray-600">
-              Every piece is handcrafted with precision and care by skilled artisans.
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-            <div className="text-4xl mb-4">✨</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Custom Designs</h3>
-            <p className="text-gray-600">
-              Tailored solutions to match your unique style and space requirements.
-            </p>
-          </div>
-          
-          <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-            <div className="text-4xl mb-4">🤝</div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Customer First</h3>
-            <p className="text-gray-600">
-              Your satisfaction is our priority, from design to installation.
-            </p>
-          </div>
+      {/* Values */}
+      <section className="py-20 px-4">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { icon: "🪵", title: "Quality materials", desc: "Premium wood, laminates, and hardware that stand the test of time." },
+            { icon: "📐", title: "Made to measure", desc: "Built to your exact dimensions. No off-the-shelf shortcuts." },
+            { icon: "🤝", title: "Personal service", desc: "From first call to final installation — we're with you every step." },
+          ].map(item => (
+            <div key={item.title} className="p-6 rounded-xl text-center" style={{ background: "#fff", border: "1px solid var(--border)" }}>
+              <div className="text-4xl mb-4">{item.icon}</div>
+              <div className="font-semibold text-lg mb-2" style={{ color: "var(--foreground)" }}>{item.title}</div>
+              <p className="text-sm" style={{ color: "var(--muted)" }}>{item.desc}</p>
+            </div>
+          ))}
         </div>
+      </section>
 
-        {/* Call to Action */}
-        <div className="mt-16 text-center bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-lg shadow-xl p-12">
-          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
-          <p className="text-xl mb-8">
-            Visit our showroom or contact us for a free consultation
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/contact" 
-              className="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-            >
-              Contact Us
-            </a>
-            <a 
-              href="/projects" 
-              className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-amber-600 transition"
-            >
-              View Our Work
-            </a>
-          </div>
+      {/* CTA */}
+      <section className="py-20 px-4 text-center" style={{ background: "var(--foreground)" }}>
+        <h2 className="text-3xl font-bold text-white mb-4">Ready to start your project?</h2>
+        <p className="mb-8" style={{ color: "#c8b89a" }}>Visit our showroom or send us an enquiry today.</p>
+        <div className="flex gap-4 justify-center flex-wrap">
+          <Link href="/contact" className="px-8 py-3 rounded font-semibold text-white" style={{ background: "var(--accent)" }}>Contact Us</Link>
+          <Link href="/gallery" className="px-8 py-3 rounded font-semibold" style={{ background: "rgba(255,255,255,0.1)", color: "#fff" }}>View Our Work</Link>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
